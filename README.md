@@ -4,12 +4,16 @@ Parcel plugin that interpolates properties in ENV into .webmanifest files
 
 ## Installation
 
-`npm i -d parcel-plugin-interpolate-webmanifest`
+```Shell
+$ npm i -d parcel-plugin-interpolate-webmanifest
+```
 or
-`yarn add --dev parcel-plugin-interpolate-webmanifest`
+```Shell
+$ yarn add --dev parcel-plugin-interpolate-webmanifest
+```
 
 
-Attention: parcel-bundler has to be installed_
+_Attention: parcel-bundler has to be installed_
 
 ## Usage
 

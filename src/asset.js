@@ -1,7 +1,7 @@
-const HTMLAsset = require('./HTMLAsset');
+const WebManifestAsset = require('./WebManifestAsset');
 const escapeStringRegexp = require('escape-string-regexp');
 
-class InterpolateHtmlAsset extends HTMLAsset {
+class InterpolateWebManifestAsset extends WebManifestAsset {
     async pretransform() {
         this.contents = this.interpolate(this.contents);
         return super.pretransform();
@@ -20,4 +20,4 @@ class InterpolateHtmlAsset extends HTMLAsset {
     }
 }
 
-module.exports = InterpolateHtmlAsset;
+module.exports = InterpolateWebManifestAsset;

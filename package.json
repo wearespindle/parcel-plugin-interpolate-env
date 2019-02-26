@@ -1,9 +1,14 @@
 {
-    "name": "parcel-plugin-interpolate-html",
-    "version": "1.0.0",
+    "name": "parcel-plugin-interpolate-webmanifest",
+    "version": "0.0.1",
     "main": "src/index.js",
-    "author": "Lukáš Krotovič <lukas@krotovic.cz>",
-    "repository": "https://github.com/krotovic/parcel-plugin-interpolate-html",
+    "author": "Joël Kuijten <joel.kuijten@wearespindle.com>",
+    "contributors": [
+        "Lukáš Krotovič <lukas@krotovic.cz>",
+        "Joël Kuijten <joel.kuijten@wearespindle.com>"
+    ],
+    "license": "MIT",
+    "repository": "https://github.com/wearespindle/parcel-plugin-interpolate-webmanifest",
     "dependencies": {
         "escape-string-regexp": "^1.0.5"
     },

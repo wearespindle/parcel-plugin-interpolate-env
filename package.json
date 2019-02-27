@@ -1,5 +1,5 @@
 {
-    "name": "parcel-plugin-interpolate-webmanifest",
+    "name": "parcel-plugin-interpolate-env",
     "version": "0.0.1",
     "main": "src/index.js",
     "author": "Joël Kuijten <joel.kuijten@wearespindle.com>",
@@ -8,7 +8,7 @@
         "Joël Kuijten <joel.kuijten@wearespindle.com>"
     ],
     "license": "MIT",
-    "repository": "https://github.com/wearespindle/parcel-plugin-interpolate-webmanifest",
+    "repository": "https://github.com/wearespindle/parcel-plugin-interpolate-env",
     "dependencies": {
         "escape-string-regexp": "^1.0.5"
     },

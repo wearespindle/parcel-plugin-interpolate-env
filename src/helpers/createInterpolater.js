@@ -1,7 +1,7 @@
-const WebManifestAsset = require('./WebManifestAsset');
 const escapeStringRegexp = require('escape-string-regexp');
 
-class InterpolateWebManifestAsset extends WebManifestAsset {
+module.exports = function (Asset) {
+  return class InterpolateAsset extends Asset {
     async pretransform() {
         this.contents = this.interpolate(this.contents);
         return super.pretransform();
@@ -9,15 +9,15 @@ class InterpolateWebManifestAsset extends WebManifestAsset {
 
     interpolate(code) {
         const env = this.options.env;
+
         Object.keys(env).forEach((envKey) => {
             const replacement = env[envKey];
             code = code.replace(
-                new RegExp('%' + escapeStringRegexp(envKey) + '%', 'g'),
+                new RegExp('%%' + escapeStringRegexp(envKey) + '%%', 'g'),
                 replacement,
             )
         });
         return code;
     }
+  }
 }
-
-module.exports = InterpolateWebManifestAsset;
